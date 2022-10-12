@@ -4,7 +4,7 @@ Solusi Praktikum 1 Probabilitas Statistika
 Nama  : Gabrielle Immanuel Osvaldo Kurniawan
 NRP   : 5025211135
 
-============================================================================================
+===========================================================================
 
   01. Seorang penyurvei secara acak memilih orang-orang di jalan sampai dia bertemu dengan seseorang yang menghadiri acara vaksinasi sebelumnya. 
 
@@ -88,7 +88,7 @@ NRP   : 5025211135
   Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%201.png)
   
- ============================================================================================
+ ===========================================================================
   
  02. Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
 
@@ -150,7 +150,7 @@ Jawaban :
 Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%202.png)
 
-  ============================================================================================
+  ===========================================================================
   
   03. Diketahui data dari  sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
 
@@ -216,7 +216,7 @@ Screenshot hasil console
 Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%203.png)
 
-  ============================================================================================
+  ===========================================================================
   
   04. Diketahui nilai x = 2 dan v = 10. Tentukan:
 
@@ -280,7 +280,7 @@ Screenshot hasil console
 Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%204.png)
 
-  ============================================================================================
+  ===========================================================================
   
   05. Diketahui bilangan acak (random variable) berdistribusi exponential (λ = 3). Tentukan
 
@@ -358,13 +358,13 @@ Screenshot hasil console
  2. Gambar Histogram untuk random 10
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/cf1d3841d017b1e1e3379839b851f6eb5dbfa8f3/Screenshot%20R%20Studio/Soal%205%20(0).png)
  3. Gambar Histogram untuk random 100
-  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%205%20(1).png)
+  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/b4b56e2f2e17d85eaecb4daa783d28e17f98604f/Screenshot%20R%20Studio/Soal%205%20(1).png)
  4. Gambar Histogram untuk random 1000
-  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%205%20(2).png)
+  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/b4b56e2f2e17d85eaecb4daa783d28e17f98604f/Screenshot%20R%20Studio/Soal%205%20(2).png)
  5. Gambar Histogram untuk random 10000
-  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%205%20(3).png)
+  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/b4b56e2f2e17d85eaecb4daa783d28e17f98604f/Screenshot%20R%20Studio/Soal%205%20(3).png)
   
-  ============================================================================================
+  ===========================================================================
   
  06. Diketahui generate random nilai sebanyak 100 data, mean = 50, sd = 8. Tentukan
 
@@ -401,15 +401,20 @@ Screenshot hasil console
     paste("Hasil: ", data)
     summary(data)
 
-    x1 = runif(1, min = min(data), max = mean) paste("X1: ", x1)
-    x2 = runif(1, min = mean, max = max(data)) paste("X2: ", x2)
+    x1 = runif(1, min = min(data), max = mean) 
+    paste("X1: ", x1)
+    x2 = runif(1, min = mean, max = max(data)) 
+    paste("X2: ", x2)
 
-    peluang1 = pnorm(x1, mean, sd) paste("x1: ", peluang1)
-    peluang2 = pnorm(x2, mean, sd) paste("x2: ", peluang2)
+    peluang1 = pnorm(x1, mean, sd) 
+    paste("x1: ", peluang1)
+    peluang2 = pnorm(x2, mean, sd) 
+    paste("x2: ", peluang2)
 
     peluang = peluang2 - peluang1
     plot(data)
     ```
+    runif() function membangun angka random dari distribusi uniform. Sifat ini dapat dimanfaatkan untuk mencari data diatas maupun dibawah dari rata rata yang didapat. Untuk random bawah, batas minimumnya adalah data terkecil sedangkan batas maksimumnya adalah data terbesar, setelahnya runif() akan mencari 1 data random dintara range yang diberikan, demikian sebaliknya untuk random atas
 
   - Poin B
 
@@ -418,6 +423,7 @@ Screenshot hasil console
     breaks = 50
     hist(data, breaks, main = "5025211135_Gabrielle Immanuel Osvaldo Kurniawan_Probstat_A_DNHistogram")
     ```
+    Untuk menambahkan atau mengubah judul dari histogram kita berikan instruksi lebih pada paramater hist() dengan main = <String>
 
   - Poin C
 
@@ -462,4 +468,4 @@ Screenshot hasil console
  1. Hasil
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%206.png)
  2. Plot 6.a
-  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%206%20(0).png)
+  ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/b4b56e2f2e17d85eaecb4daa783d28e17f98604f/Screenshot%20R%20Studio/Soal%206%20(0).png)
