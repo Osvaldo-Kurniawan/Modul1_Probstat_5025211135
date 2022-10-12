@@ -4,7 +4,6 @@ Solusi Praktikum 1 Probabilitas Statistika
 Nama  : Gabrielle Immanuel Osvaldo Kurniawan
 NRP   : 5025211135
 
-===========================================================================
 
   01. Seorang penyurvei secara acak memilih orang-orang di jalan sampai dia bertemu dengan seseorang yang menghadiri acara vaksinasi sebelumnya. 
 
@@ -88,7 +87,7 @@ NRP   : 5025211135
   Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%201.png)
   
- ===========================================================================
+
   
  02. Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
 
@@ -150,7 +149,7 @@ Jawaban :
 Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%202.png)
 
-  ===========================================================================
+
   
   03. Diketahui data dari  sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
 
@@ -216,7 +215,7 @@ Screenshot hasil console
 Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%203.png)
 
-  ===========================================================================
+
   
   04. Diketahui nilai x = 2 dan v = 10. Tentukan:
 
@@ -280,7 +279,7 @@ Screenshot hasil console
 Screenshot hasil console
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/4352d99b24f43ba071557fd0e4484dda2561e71e/Screenshot%20R%20Studio/Soal%204.png)
 
-  ===========================================================================
+
   
   05. Diketahui bilangan acak (random variable) berdistribusi exponential (λ = 3). Tentukan
 
@@ -364,7 +363,7 @@ Screenshot hasil console
  5. Gambar Histogram untuk random 10000
   ![alt text](https://github.com/Osvaldo-Kurniawan/Modul1_Probstat_5025211135/blob/b4b56e2f2e17d85eaecb4daa783d28e17f98604f/Screenshot%20R%20Studio/Soal%205%20(3).png)
   
-  ===========================================================================
+
   
  06. Diketahui generate random nilai sebanyak 100 data, mean = 50, sd = 8. Tentukan
 
